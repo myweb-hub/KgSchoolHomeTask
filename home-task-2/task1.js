@@ -19,4 +19,4 @@ undefined
 const obj3 ={...obj1,...obj2};
 undefined
 obj3
-{a: 1, b: 2, c: 3}
+//{a: 1, b: 2, c: 3}
