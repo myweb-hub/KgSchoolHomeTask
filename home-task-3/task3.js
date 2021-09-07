@@ -1,21 +1,14 @@
-function uniqueArray(){
-    array.sort((a, b) => a - b);
-    console.log(array);
-    
-    }
-    
-    function removeDups(array){
-        var uniqueArray = [];
-        for(i=0; i < array.length; i++){
-            if(uniqueArray.indexOf(array[i])=== -1) {
-                uniqueArray.push(array[i]);
-            }
+function flatten(){
+    if(typeof Array.isArray()){
+        var merged = array.concat.apply([], array); 
+    console.log(merged)
         }
-        return uniqueArray;
+    else{
+        return array;
+}
+return flatten();
     }
-    var removed = removeDups(array);
-    console.log(removed);
-    const array =[1,3,4,2,3,1,4,5];
+array.forEach(flatten)
+const array = [1, 3, 6, [11, 12],[15,[19,23]]];
 
-    uniqueArray(array);
-    
+    uniqueArray(array); //[1, 1, 2, 3, 3, 4, 4, 5]
