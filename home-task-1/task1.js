@@ -7,3 +7,4 @@ function drawTriangle (height){
     }
 }
 drawTriangle(3);
+//it works!
